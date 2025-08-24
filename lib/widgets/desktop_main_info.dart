@@ -21,10 +21,11 @@ class DesktopMainInfo extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: Image.asset(
               'assets/images/profile.jpg',
-              height: size.height * .36,
-              width: size.width * .2,
+              height: 320,
+              width: 320,
             ),
           ),
+          const SizedBox(width: 20),
           SelectionArea(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
