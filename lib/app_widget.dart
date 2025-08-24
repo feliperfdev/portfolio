@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'utils/scripts/mobile_responsive.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -14,8 +15,14 @@ class AppWidget extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
         appBarTheme: AppBarTheme(backgroundColor: Colors.black),
         textTheme: TextTheme(
-          titleLarge: TextStyle(fontFamily: 'GasoekOne', fontSize: 40),
-          displayMedium: TextStyle(fontFamily: 'Gantari', fontSize: 30),
+          titleLarge: TextStyle(
+            fontFamily: 'GasoekOne',
+            fontSize: isMobileScreen(context) ? 30 : 40,
+          ),
+          displayMedium: TextStyle(
+            fontFamily: 'Gantari',
+            fontSize: isMobileScreen(context) ? 16 : 30,
+          ),
         ),
       ),
       home: const HomePage(),

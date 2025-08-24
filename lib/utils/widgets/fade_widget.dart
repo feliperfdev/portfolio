@@ -8,8 +8,8 @@ class FadedWidget extends StatelessWidget {
   FadedWidget({
     super.key,
     required this.child,
-    this.stops = const [.5, .8, 1],
-    List<double> opacities = const [1, .5, 0],
+    this.stops = const [.6, .8, 1],
+    List<double> opacities = const [.9, .3, 0],
   }) : colorsForStops = opacities
            .map((double opacity) => Colors.black.withValues(alpha: opacity))
            .toList();

@@ -9,7 +9,7 @@ class FadedGlowBgWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Opacity(
-        opacity: .6,
+        opacity: .5,
         child: FadedWidget(
           child: Container(
             height: MediaQuery.sizeOf(context).height * .8,
