@@ -1,4 +1,3 @@
-import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:flutter/material.dart';
 
 import 'faded_glow_bg_widget.dart';

@@ -1,4 +1,3 @@
-import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:flutter/material.dart';
 
 import 'social_info_widget.dart';
