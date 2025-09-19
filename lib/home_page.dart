@@ -2,11 +2,20 @@ import 'package:flutter/material.dart';
 
 import 'faded_glow_bg_widget.dart';
 import 'utils/scripts/mobile_responsive.dart';
+import 'view_model/home_view_model.dart';
 import 'widgets/desktop_main_info.dart';
 import 'widgets/mobile_main_info.dart';
+import 'widgets/projects_section.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final homeVM = HomeViewModel();
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +24,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          spacing: 20,
+          spacing: isMobileScreen(context) ? 10 : 20,
           children: [
             Image.asset(
               'assets/images/logo.png',
@@ -36,24 +45,22 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
+      body: Stack(
+        children: [
+          const FadedGlowBgWidget(),
+          SingleChildScrollView(
+            controller: homeVM.scroll,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FadedGlowBgWidget(),
-
-                Column(
-                  children: [
-                    !isMobileScreen(context)
-                        ? const DesktopMainInfo()
-                        : const MobileMainInfo(),
-                  ],
-                ),
+                !isMobileScreen(context)
+                    ? DesktopMainInfo(viewModel: homeVM)
+                    : MobileMainInfo(viewModel: homeVM),
+                const ProjectsSection(),
               ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

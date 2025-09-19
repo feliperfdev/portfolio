@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
+import '../view_model/home_view_model.dart';
 import 'social_info_widget.dart';
 
 class MobileMainInfo extends StatelessWidget {
-  const MobileMainInfo({super.key});
+  final HomeViewModel viewModel;
+
+  const MobileMainInfo({super.key, required this.viewModel});
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.sizeOf(context);
     final theme = Theme.of(context);
     final textTheme = theme.textTheme;
 
@@ -87,7 +91,13 @@ class MobileMainInfo extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 120),
-                const SocialInfoWidget(margin: 30, iconSpacing: 16),
+                SocialInfoWidget(
+                  margin: 30,
+                  iconSpacing: 16,
+                  onSeeProjectsTap: () async {
+                    await viewModel.scrollTo(Section.projects, size: size);
+                  },
+                ),
               ],
             ),
           ),

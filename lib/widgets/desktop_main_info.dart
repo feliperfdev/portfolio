@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../view_model/home_view_model.dart';
 import 'social_info_widget.dart';
 
 class DesktopMainInfo extends StatelessWidget {
-  const DesktopMainInfo({super.key});
+  final HomeViewModel viewModel;
+
+  const DesktopMainInfo({super.key, required this.viewModel});
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +92,13 @@ class DesktopMainInfo extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 120),
-                const SocialInfoWidget(margin: 60, iconSpacing: 24),
+                SocialInfoWidget(
+                  margin: 60,
+                  iconSpacing: 24,
+                  onSeeProjectsTap: () async {
+                    await viewModel.scrollTo(Section.projects, size: size);
+                  },
+                ),
               ],
             ),
           ),
