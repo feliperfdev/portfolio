@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../view_model/home_view_model.dart';
 import 'social_info_widget.dart';
 
