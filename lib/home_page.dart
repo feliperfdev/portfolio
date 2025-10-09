@@ -6,6 +6,7 @@ import 'view_model/home_view_model.dart';
 import 'widgets/desktop_main_info.dart';
 import 'widgets/mobile_main_info.dart';
 import 'widgets/projects_section.dart';
+import 'widgets/contact_section.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,16 +32,19 @@ class _HomePageState extends State<HomePage> {
               height: size.height * (isMobileScreen(context) ? .03 : .05),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () async =>
+                  await homeVM.scrollTo(Section.info, size: size),
               child: Text('Início', style: TextStyle(color: Colors.white)),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () async =>
+                  await homeVM.scrollTo(Section.projects, size: size),
               child: Text('Projetos', style: TextStyle(color: Colors.white)),
             ),
             TextButton(
-              onPressed: () {},
-              child: Text('Contatos', style: TextStyle(color: Colors.white)),
+              onPressed: () async =>
+                  await homeVM.scrollTo(Section.contacts, size: size),
+              child: Text('Contato', style: TextStyle(color: Colors.white)),
             ),
           ],
         ),
@@ -57,6 +61,7 @@ class _HomePageState extends State<HomePage> {
                     ? DesktopMainInfo(viewModel: homeVM)
                     : MobileMainInfo(viewModel: homeVM),
                 const ProjectsSection(),
+                const ContactSection(),
               ],
             ),
           ),

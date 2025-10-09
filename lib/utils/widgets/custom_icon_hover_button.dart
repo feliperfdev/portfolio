@@ -27,7 +27,7 @@ class _CustomIconHoverButtonState extends State<CustomIconHoverButton> {
       child: TextButton.icon(
         onPressed: widget.onTap,
         label: Text(
-          'Currículo',
+          widget.label,
           style: TextStyle(color: hovered ? Color(0xff4E3EE6) : Colors.white),
         ),
         style: ButtonStyle(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utils/scripts/mobile_responsive.dart';
 import '../view_model/home_view_model.dart';
 import 'social_info_widget.dart';
 
@@ -90,7 +91,7 @@ class MobileMainInfo extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 120),
+                SizedBox(height: isMobileScreen(context) ? 30 : 120),
                 SocialInfoWidget(
                   margin: 30,
                   iconSpacing: 16,

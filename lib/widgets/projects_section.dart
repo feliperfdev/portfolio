@@ -20,7 +20,9 @@ class _ProjectsSectionState extends State<ProjectsSection> {
     final size = MediaQuery.sizeOf(context);
 
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 120),
+      margin: EdgeInsets.symmetric(
+        vertical: isMobileScreen(context) ? 20 : 120,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
