@@ -19,18 +19,37 @@ final class ProjectsViewModel {
     Project(
       name: 'Aibum',
       description:
-          'Com o Aibum você pode enviar imagens e receber versões em contorno, prontas para colorir. Ideal para presentes, diversão, terapia ou pura criatividade.',
+          'Envie imagens e receba versões em contorno, prontas para colorir. Ideal para presentes, diversão, terapia ou pura criatividade.',
       imagePath: 'assets/images/aibum.png',
       url: 'https://aibum.app',
-      techList: [],
+      techList: [
+        Tech(name: 'Flutter', color: Colors.blueAccent),
+        Tech(name: 'Typescript', color: Colors.blueAccent),
+      ],
     ),
     Project(
       name: 'FinanceTracker',
       description:
-          'O FinanceTracker é um app para registrar receitas e despesas e ter uma visão clara da sua balança financeira pessoal.',
+          'Registre receitas e despesas para ter uma visão clara da sua balança financeira pessoal.',
       imagePath: 'assets/images/financetracker.jpg',
       url: '',
-      techList: [],
+      techList: [
+        Tech(name: 'Flutter', color: Colors.blueAccent),
+        Tech(name: 'AWS', color: const Color.fromARGB(255, 212, 162, 11)),
+        Tech(name: 'Typescript', color: Colors.blueAccent),
+      ],
+    ),
+    Project(
+      name: 'SetLift',
+      description:
+          'Converta PDFs e planilhas de treinos em componentes interativos para acompanhamento e análise de progresso em treinos fitness.',
+      imagePath: 'assets/images/setlift.png',
+      url: '',
+      techList: [
+        Tech(name: 'Flutter', color: Colors.blueAccent),
+        Tech(name: 'Supabase', color: const Color.fromARGB(255, 73, 199, 73)),
+        Tech(name: 'Typescript', color: Colors.blueAccent),
+      ],
     ),
   ];
 }
