@@ -4,8 +4,13 @@ import 'social_info_widget.dart';
 
 class DesktopMainInfo extends StatelessWidget {
   final HomeViewModel viewModel;
+  final GlobalKey projectsKey;
 
-  const DesktopMainInfo({super.key, required this.viewModel});
+  const DesktopMainInfo({
+    super.key,
+    required this.viewModel,
+    required this.projectsKey,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +19,7 @@ class DesktopMainInfo extends StatelessWidget {
     final size = MediaQuery.sizeOf(context);
 
     return Container(
-      margin: EdgeInsets.only(top: size.height * .2),
+      margin: EdgeInsets.only(top: size.height * .1),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -95,7 +100,7 @@ class DesktopMainInfo extends StatelessWidget {
                   margin: 60,
                   iconSpacing: 24,
                   onSeeProjectsTap: () async {
-                    await viewModel.scrollTo(Section.projects, size: size);
+                    await viewModel.scrollTo(size: size, key: projectsKey);
                   },
                 ),
               ],

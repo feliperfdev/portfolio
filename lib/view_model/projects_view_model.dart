@@ -4,7 +4,7 @@ import '../models/project.dart';
 import '../models/tech.dart';
 
 final class ProjectsViewModel {
-  List<Project> projects = [
+  final projects = <Project>[
     Project(
       name: 'KeepLinked',
       description:

@@ -3,22 +3,12 @@ import 'dart:html' as html;
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 
-enum Section {
-  info(position: 0),
-  projects(position: .5),
-  contacts(position: 1);
-
-  final double position;
-
-  const Section({required this.position});
-}
-
 final class HomeViewModel {
   final scroll = ScrollController();
 
-  Future<void> scrollTo(Section section, {required Size size}) async {
-    await scroll.animateTo(
-      size.height * section.position,
+  Future<void> scrollTo({required Size size, required GlobalKey key}) async {
+    await Scrollable.ensureVisible(
+      key.currentContext!,
       duration: const Duration(milliseconds: 400),
       curve: Curves.easeIn,
     );

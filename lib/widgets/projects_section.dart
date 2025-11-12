@@ -17,23 +17,18 @@ class _ProjectsSectionState extends State<ProjectsSection> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
-
     return Container(
-      margin: EdgeInsets.symmetric(
-        vertical: isMobileScreen(context) ? 20 : 120,
-      ),
+      margin: EdgeInsets.symmetric(vertical: isMobileScreen(context) ? 20 : 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: size.width * .1),
+          Center(
             child: Text(
               'Projetos',
               style: TextStyle(fontSize: 48, color: Colors.white),
             ),
           ),
-          const SizedBox(height: 70),
+          const SizedBox(height: 20),
           Center(
             child: Wrap(
               direction: isMobileScreen(context)

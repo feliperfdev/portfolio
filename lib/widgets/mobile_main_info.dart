@@ -6,8 +6,13 @@ import 'social_info_widget.dart';
 
 class MobileMainInfo extends StatelessWidget {
   final HomeViewModel viewModel;
+  final GlobalKey projectsKey;
 
-  const MobileMainInfo({super.key, required this.viewModel});
+  const MobileMainInfo({
+    super.key,
+    required this.viewModel,
+    required this.projectsKey,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +101,7 @@ class MobileMainInfo extends StatelessWidget {
                   margin: 30,
                   iconSpacing: 16,
                   onSeeProjectsTap: () async {
-                    await viewModel.scrollTo(Section.projects, size: size);
+                    await viewModel.scrollTo(size: size, key: projectsKey);
                   },
                 ),
               ],

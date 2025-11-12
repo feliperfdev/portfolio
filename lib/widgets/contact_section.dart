@@ -50,7 +50,7 @@ class _ContactSectionState extends State<ContactSection> {
       margin: EdgeInsets.only(
         left: isMobile ? 16 : size.width * .1,
         right: isMobile ? 16 : size.width * .1,
-        bottom: 120,
+        bottom: 70,
       ),
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -88,6 +88,9 @@ class _ContactSectionState extends State<ContactSection> {
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: theme.primaryColor),
                     ),
+                    errorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.red[800]!),
+                    ),
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -108,6 +111,9 @@ class _ContactSectionState extends State<ContactSection> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: theme.primaryColor),
+                    ),
+                    errorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.red[800]!),
                     ),
                   ),
                   validator: (value) {
@@ -134,6 +140,9 @@ class _ContactSectionState extends State<ContactSection> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: theme.primaryColor),
+                    ),
+                    errorBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.red[800]!),
                     ),
                   ),
                   validator: (value) {
