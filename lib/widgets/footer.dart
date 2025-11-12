@@ -10,7 +10,7 @@ class Footer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            '© 2025 FELIPE AZEVEDO RIBEIRO - Portfólio desenvolvido com Flutter Web 💙',
+            '© ${DateTime.now().year} FELIPE AZEVEDO RIBEIRO - Portfólio desenvolvido com Flutter Web 💙',
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
