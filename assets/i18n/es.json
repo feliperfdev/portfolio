@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "experiences": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy ",
+    "name": "Felipe",
+    "and": "y soy ",
+    "role": "Desarrollador de Software",
+    "description": "Comencé como Desarrollador Móvil y ahora trabajo como desarrollador fullstack en mis propios proyectos. Soy apasionado por la tecnología e innovación, buscando nuevas experiencias trabajando en proyectos personales y desarrollando soluciones innovadoras."
+  },
+  "social": {
+    "resume": "Currículum",
+    "seeProjects": "Ver proyectos"
+  },
+  "sections": {
+    "projects": "Proyectos",
+    "experiences": "Experiencia",
+    "technologies": "Tecnologías"
+  },
+  "projects": {
+    "keeplinked": {
+      "name": "KeepLinked",
+      "description": "Mantenga todos sus enlaces organizados en carpetas personalizadas, con etiquetas y privacidad. Guarde, encuentre y acceda rápidamente a todo lo que es importante para usted, desde cualquier lugar y en cualquier momento. Simple, seguro y a su manera."
+    },
+    "aibum": {
+      "name": "Aibum",
+      "description": "Sube imágenes y recibe versiones en contorno, listas para colorear. Ideal para regalos, diversión, terapia o pura creatividad."
+    },
+    "financetracker": {
+      "name": "FinanceTracker",
+      "description": "Registre ingresos y gastos para tener una visión clara de su balance financiero personal."
+    },
+    "wanderlevel": {
+      "name": "Wander Level",
+      "description": "Registre ingresos y gastos para tener una visión clara de su balance financiero personal."
+    }
+  },
+  "experiences": {
+    "petize": {
+      "title": "Desarrollador Móvil",
+      "location": "Petize",
+      "date": "01/2023 - 01/2025",
+      "description": "En Petize, trabajé en el desarrollo de aplicaciones móviles con Flutter, aplicando prácticas de TDD, BDD y Clean Code. Trabajé con gestión de rutas e inyección de dependencias a través de Flutter Modular, BLoC para control de estado, consumo de APIs e integración con Firebase Realtime Database. También participé en procesos de internacionalización, aseguramiento de calidad con SonarQube, animaciones con Slivers y uso de metodologías ágiles con Jira, además de realizar revisiones de código y colaborar en la mejora continua de las entregas."
+    },
+    "fteam": {
+      "title": "Desarrollador Móvil",
+      "location": "FTeam",
+      "date": "12/2021 - 03/2022",
+      "description": "En Fteam, trabajé como desarrollador móvil con Flutter, aplicando principios SOLID, Clean Architecture y varios patrones de diseño y gestión de estado (BLoC, Cubit, Triple, SSP). Desarrollé componentes personalizados con CustomClipper y CustomPainter, consumí APIs REST, realicé pruebas unitarias y participé en decisiones técnicas sobre paquetes, arquitectura y prototipos, en constante comunicación con el equipo de tecnología y clientes para garantizar soluciones eficientes y bien estructuradas."
+    },
+    "ommed": {
+      "title": "Desarrollador Móvil",
+      "location": "Ommed",
+      "date": "03/2021 - 08/2021",
+      "description": "La pasantía en el proyecto Ommed fue esencial para mi mejora en Dart y Flutter, proporcionando experiencia práctica con metodologías ágiles, arquitectura limpia e integración de microservicios. Trabajé en el desarrollo de la aplicación móvil para Android e iOS, participé en decisiones técnicas y de diseño, realicé migraciones e integraciones con APIs a través de gRPC, utilicé Git y Gitflow para control de versiones, implementé el patrón MVVM con MobX y Flutter Modular, además de contribuir a la evolución continua del proyecto y el equipo."
+    }
+  },
+  "contact": {
+    "title": "¡Póngase en contacto!",
+    "subject": "Asunto",
+    "email": "Su correo electrónico",
+    "message": "Quiero solicitar un presupuesto para un proyecto; Tengo una oferta para usted...",
+    "send": "Enviar",
+    "validation": {
+      "subjectRequired": "Por favor, ingrese el asunto",
+      "emailRequired": "Por favor, ingrese su correo electrónico",
+      "emailInvalid": "Correo electrónico inválido",
+      "messageRequired": "Por favor, ingrese el contenido"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} FELIPE AZEVEDO RIBEIRO - Portafolio desarrollado con Flutter Web 💙"
+  }
+}

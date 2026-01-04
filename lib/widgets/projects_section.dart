@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
 import '../view_model/projects_view_model.dart';
@@ -24,7 +25,7 @@ class _ProjectsSectionState extends State<ProjectsSection> {
         children: [
           Center(
             child: Text(
-              'Projetos',
+              FlutterI18n.translate(context, 'sections.projects'),
               style: TextStyle(fontSize: 48, color: Colors.white),
             ),
           ),

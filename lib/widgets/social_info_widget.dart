@@ -1,5 +1,6 @@
 import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
 import '../utils/widgets/custom_icon_hover_button.dart';
@@ -40,13 +41,13 @@ class _SocialInfoWidgetState extends State<SocialInfoWidget> {
       children: [
         CustomIconHoverButton(
           icon: AkarIcons.file,
-          label: 'Curriculo',
+          label: FlutterI18n.translate(context, 'social.resume'),
           onTap: () async => await homeVM.downloadCurriculum(),
         ),
         const SizedBox(width: 12),
         CustomIconHoverButton(
           icon: AkarIcons.planet,
-          label: 'Ver projetos',
+          label: FlutterI18n.translate(context, 'social.seeProjects'),
           onTap: widget.onSeeProjectsTap,
         ),
         if (!isMobileScreen(context))

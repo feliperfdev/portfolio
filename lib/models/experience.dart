@@ -1,17 +1,17 @@
 import 'tech.dart';
 
 final class Experience {
-  final String title;
-  final String location;
-  final String date;
-  final String description;
+  final String titleKey;
+  final String locationKey;
+  final String dateKey;
+  final String descriptionKey;
   final List<Tech>? techs;
 
   Experience({
-    required this.title,
-    required this.location,
-    required this.date,
-    required this.description,
+    required this.titleKey,
+    required this.locationKey,
+    required this.dateKey,
+    required this.descriptionKey,
     this.techs,
   });
 }

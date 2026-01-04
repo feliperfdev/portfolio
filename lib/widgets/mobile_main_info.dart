@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
 import '../view_model/home_view_model.dart';
@@ -40,7 +41,7 @@ class MobileMainInfo extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 30),
                   child: Text.rich(
                     TextSpan(
-                      text: 'Olá, eu sou o ',
+                      text: FlutterI18n.translate(context, 'hero.greeting'),
                       style: textTheme.titleLarge?.copyWith(
                         color: Colors.white,
                         shadows: [
@@ -55,7 +56,7 @@ class MobileMainInfo extends StatelessWidget {
                       ),
                       children: [
                         TextSpan(
-                          text: 'Felipe\n',
+                          text: '${FlutterI18n.translate(context, 'hero.name')}\n',
                           style: textTheme.titleLarge?.copyWith(
                             color: Color(0xff6062D5),
                             shadows: [
@@ -70,13 +71,13 @@ class MobileMainInfo extends StatelessWidget {
                           ),
                         ),
                         TextSpan(
-                          text: 'e sou ',
+                          text: FlutterI18n.translate(context, 'hero.and'),
                           style: textTheme.titleLarge?.copyWith(
                             color: Colors.white,
                           ),
                         ),
                         TextSpan(
-                          text: 'Desenvolvedor de Software',
+                          text: FlutterI18n.translate(context, 'hero.role'),
                           style: textTheme.titleLarge?.copyWith(
                             color: Color(0xff6062D5),
                           ),
@@ -89,7 +90,7 @@ class MobileMainInfo extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.sizeOf(context).width * .9,
                   child: Text(
-                    'Iniciei como Desenvolvedor Mobile e hoje atuo como fullstack em meus próprios projetos. Sou apaixonado por tecnologia e inovação, buscando por novas experiências trabalhando em projetos pessoais e buscando desenvolver soluções inovadoras.',
+                    FlutterI18n.translate(context, 'hero.description'),
                     maxLines: 4,
                     style: textTheme.displayMedium?.copyWith(
                       color: Colors.white,

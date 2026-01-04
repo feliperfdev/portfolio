@@ -18,7 +18,7 @@ final class HomeViewModel {
     try {
       final fileData = (await get(
         Uri.parse(
-          'https://raw.githubusercontent.com/feliperfdev/feliperfdev/refs/heads/main/assets/Curr%C3%ADculo%20-%20Felipe%20Ribeiro.pdf',
+          'https://raw.githubusercontent.com/feliperfdev/feliperfdev/refs/heads/main/cv/cv_ptbr.pdf',
         ),
       )).bodyBytes;
 

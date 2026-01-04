@@ -9,6 +9,10 @@ final class SocialViewModel {
       url: 'https://www.instagram.com/feliper.tech/',
     ),
     (
+      icon: AkarIcons.threads_fill,
+      url: 'https://www.threads.com/@feliper.tech',
+    ),
+    (
       icon: AkarIcons.linkedin_fill,
       url: 'https://www.linkedin.com/in/feliperdev/',
     ),

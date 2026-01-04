@@ -1,5 +1,6 @@
 import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
@@ -62,7 +63,7 @@ class _ContactSectionState extends State<ContactSection> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Entre em contato!',
+            FlutterI18n.translate(context, 'contact.title'),
             style: TextStyle(
               fontSize: 36,
               color: Colors.white,
@@ -80,7 +81,7 @@ class _ContactSectionState extends State<ContactSection> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     prefixIcon: Icon(AkarIcons.chat_dots, color: Colors.white),
-                    labelText: 'Assunto',
+                    labelText: FlutterI18n.translate(context, 'contact.subject'),
                     labelStyle: const TextStyle(color: Colors.white70),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white24),
@@ -94,7 +95,7 @@ class _ContactSectionState extends State<ContactSection> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Por favor, insira o assunto';
+                      return FlutterI18n.translate(context, 'contact.validation.subjectRequired');
                     }
                     return null;
                   },
@@ -104,7 +105,7 @@ class _ContactSectionState extends State<ContactSection> {
                   style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     prefixIcon: Icon(AkarIcons.envelope, color: Colors.white),
-                    labelText: 'Seu e-mail',
+                    labelText: FlutterI18n.translate(context, 'contact.email'),
                     labelStyle: const TextStyle(color: Colors.white70),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white24),
@@ -118,10 +119,10 @@ class _ContactSectionState extends State<ContactSection> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Por favor, insira seu e-mail';
+                      return FlutterI18n.translate(context, 'contact.validation.emailRequired');
                     }
                     if (!RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+').hasMatch(value)) {
-                      return 'E-mail inválido';
+                      return FlutterI18n.translate(context, 'contact.validation.emailInvalid');
                     }
                     return null;
                   },
@@ -132,8 +133,7 @@ class _ContactSectionState extends State<ContactSection> {
                   maxLines: 5,
                   decoration: InputDecoration(
                     alignLabelWithHint: true,
-                    labelText:
-                        'Quero fazer orçamento de um projeto; Tenho uma oferta para você...',
+                    labelText: FlutterI18n.translate(context, 'contact.message'),
                     labelStyle: const TextStyle(color: Colors.white70),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white24),
@@ -147,7 +147,7 @@ class _ContactSectionState extends State<ContactSection> {
                   ),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Por favor, insira o conteúdo';
+                      return FlutterI18n.translate(context, 'contact.validation.messageRequired');
                     }
                     return null;
                   },
@@ -161,8 +161,8 @@ class _ContactSectionState extends State<ContactSection> {
                       backgroundColor: Color(0xff4E3EE6),
                       padding: const EdgeInsets.symmetric(vertical: 16),
                     ),
-                    child: const Text(
-                      'Enviar',
+                    child: Text(
+                      FlutterI18n.translate(context, 'contact.send'),
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     ),
                   ),

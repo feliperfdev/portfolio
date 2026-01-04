@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experiences": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm ",
+    "name": "Felipe",
+    "and": "and I'm a ",
+    "role": "Software Developer",
+    "description": "I started as a Mobile Developer and now work as a fullstack developer on my own projects. I'm passionate about technology and innovation, seeking new experiences working on personal projects and developing innovative solutions."
+  },
+  "social": {
+    "resume": "Resume",
+    "seeProjects": "See projects"
+  },
+  "sections": {
+    "projects": "Projects",
+    "experiences": "Experience",
+    "technologies": "Technologies"
+  },
+  "projects": {
+    "keeplinked": {
+      "name": "KeepLinked",
+      "description": "Keep all your links organized in personalized folders, with tags and privacy. Save, find and quickly access everything that's important to you, from anywhere and anytime. Simple, secure and your way."
+    },
+    "aibum": {
+      "name": "Aibum",
+      "description": "Upload images and receive outline versions, ready to color. Ideal for gifts, fun, therapy or pure creativity."
+    },
+    "financetracker": {
+      "name": "FinanceTracker",
+      "description": "Record income and expenses to have a clear view of your personal financial balance."
+    },
+    "wanderlevel": {
+      "name": "Wander Level",
+      "description": "Record income and expenses to have a clear view of your personal financial balance."
+    }
+  },
+  "experiences": {
+    "petize": {
+      "title": "Mobile Developer",
+      "location": "Petize",
+      "date": "01/2023 - 01/2025",
+      "description": "At Petize, I worked on mobile app development with Flutter, applying TDD, BDD and Clean Code practices. I worked with route management and dependency injection via Flutter Modular, BLoC for state control, API consumption and integration with Firebase Realtime Database. I also participated in internationalization processes, quality assurance with SonarQube, animations with Slivers and use of agile methodologies with Jira, in addition to performing code reviews and collaborating on continuous improvement of deliveries."
+    },
+    "fteam": {
+      "title": "Mobile Developer",
+      "location": "FTeam",
+      "date": "12/2021 - 03/2022",
+      "description": "At Fteam, I worked as a mobile developer with Flutter, applying SOLID principles, Clean Architecture and various design patterns and state management (BLoC, Cubit, Triple, SSP). I developed custom components with CustomClipper and CustomPainter, consumed REST APIs, performed unit tests and participated in technical decisions about packages, architecture and prototypes, in constant communication with the technology team and clients to ensure efficient and well-structured solutions."
+    },
+    "ommed": {
+      "title": "Mobile Developer",
+      "location": "Ommed",
+      "date": "03/2021 - 08/2021",
+      "description": "The internship on the Ommed project was essential for my improvement in Dart and Flutter, providing practical experience with agile methodologies, clean architecture and microservices integration. I worked on developing the mobile application for Android and iOS, participated in technical and design decisions, performed migrations and integrations with APIs via gRPC, used Git and Gitflow for versioning, implemented the MVVM pattern with MobX and Flutter Modular, in addition to contributing to the continuous evolution of the project and the team."
+    }
+  },
+  "contact": {
+    "title": "Get in touch!",
+    "subject": "Subject",
+    "email": "Your email",
+    "message": "I want to request a quote for a project; I have an offer for you...",
+    "send": "Send",
+    "validation": {
+      "subjectRequired": "Please enter the subject",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Invalid email",
+      "messageRequired": "Please enter the content"
+    }
+  },
+  "footer": {
+    "copyright": "© {year} FELIPE AZEVEDO RIBEIRO - Portfolio developed with Flutter Web 💙"
+  }
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
@@ -24,7 +25,7 @@ class _TechSectionState extends State<TechSection> {
         children: [
           Center(
             child: Text(
-              'Tecnologias',
+              FlutterI18n.translate(context, 'sections.technologies'),
               style: TextStyle(fontSize: 48, color: Colors.white),
             ),
           ),

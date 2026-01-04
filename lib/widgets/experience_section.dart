@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 import '../utils/scripts/mobile_responsive.dart';
 import '../view_model/experiences_view_model.dart';
@@ -21,7 +22,7 @@ class _ExperienceSectionState extends State<ExperienceSection> {
         children: [
           Center(
             child: Text(
-              'Experiências',
+              FlutterI18n.translate(context, 'sections.experiences'),
               style: TextStyle(fontSize: 48, color: Colors.white),
             ),
           ),
@@ -38,7 +39,7 @@ class _ExperienceSectionState extends State<ExperienceSection> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            '${experience.title}  |  ${experience.location}',
+                            '${FlutterI18n.translate(context, experience.titleKey)}  |  ${FlutterI18n.translate(context, experience.locationKey)}',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
                               color: Colors.white,
@@ -47,14 +48,14 @@ class _ExperienceSectionState extends State<ExperienceSection> {
                             ),
                           ),
                           Text(
-                            experience.date,
+                            FlutterI18n.translate(context, experience.dateKey),
                             textAlign: TextAlign.justify,
                             style: TextStyle(color: Colors.grey, fontSize: 14),
                           ),
                         ],
                       ),
                       subtitle: Text(
-                        experience.description,
+                        FlutterI18n.translate(context, experience.descriptionKey),
                         textAlign: TextAlign.justify,
                         style: TextStyle(color: Colors.grey[400], fontSize: 14),
                       ),

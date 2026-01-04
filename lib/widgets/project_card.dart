@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../models/project.dart';
@@ -62,7 +63,7 @@ class _ProjectCardState extends State<ProjectCard> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        widget.project.name,
+                        FlutterI18n.translate(context, widget.project.nameKey),
                         style: TextStyle(
                           fontSize: 30,
                           color: Color.fromARGB(255, 119, 105, 245),
@@ -70,7 +71,7 @@ class _ProjectCardState extends State<ProjectCard> {
                         ),
                       ),
                       Text(
-                        widget.project.description,
+                        FlutterI18n.translate(context, widget.project.descriptionKey),
                         style: TextStyle(fontSize: 14, color: Colors.white),
                       ),
                     ],

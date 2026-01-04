@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -10,7 +11,7 @@ class Footer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            '© ${DateTime.now().year} FELIPE AZEVEDO RIBEIRO - Portfólio desenvolvido com Flutter Web 💙',
+            FlutterI18n.translate(context, 'footer.copyright', translationParams: {'year': DateTime.now().year.toString()}),
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),

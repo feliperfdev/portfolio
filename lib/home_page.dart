@@ -1,5 +1,6 @@
 import 'package:akar_icons_flutter/akar_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_i18n/flutter_i18n.dart';
 
 import 'faded_glow_bg_widget.dart';
 import 'utils/scripts/mobile_responsive.dart';
@@ -58,19 +59,25 @@ class _HomePageState extends State<HomePage> {
             TextButton(
               onPressed: () async =>
                   await homeVM.scrollTo(size: size, key: initialKey),
-              child: Text('Início', style: TextStyle(color: Colors.white)),
+              child: Text(
+                FlutterI18n.translate(context, 'nav.home'),
+                style: TextStyle(color: Colors.white),
+              ),
             ),
             if (!isMobileScreen(context)) ...[
               TextButton(
                 onPressed: () async =>
                     await homeVM.scrollTo(size: size, key: projectsKey),
-                child: Text('Projetos', style: TextStyle(color: Colors.white)),
+                child: Text(
+                  FlutterI18n.translate(context, 'nav.projects'),
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
               TextButton(
                 onPressed: () async =>
                     await homeVM.scrollTo(size: size, key: experienceKey),
                 child: Text(
-                  'Experiências',
+                  FlutterI18n.translate(context, 'nav.experiences'),
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -78,7 +85,10 @@ class _HomePageState extends State<HomePage> {
             TextButton(
               onPressed: () async =>
                   await homeVM.scrollTo(size: size, key: contactKey),
-              child: Text('Contato', style: TextStyle(color: Colors.white)),
+              child: Text(
+                FlutterI18n.translate(context, 'nav.contact'),
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ],
         ),
