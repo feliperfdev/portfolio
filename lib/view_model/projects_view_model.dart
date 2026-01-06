@@ -39,12 +39,11 @@ final class ProjectsViewModel {
     Project(
       nameKey: 'projects.wanderlevel.name',
       descriptionKey: 'projects.wanderlevel.description',
-      imagePath: 'assets/images/financetracker.jpg',
+      imagePath: 'assets/images/wanderlevel.png',
       url: '',
       techList: [
         Tech(name: 'Flutter', color: Colors.blueAccent),
-        Tech(name: 'AWS', color: const Color.fromARGB(255, 212, 162, 11)),
-        Tech(name: 'Typescript', color: Colors.blueAccent),
+        Tech(name: 'Supabase', color: const Color(0xff3ECF8E)),
       ],
     ),
   ];

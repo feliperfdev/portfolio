@@ -96201,8 +96201,7 @@ case 5:case 3:return A.O(null,r)}})
 return A.P($async$$0,r)},
 $S:8}
 A.F_.prototype={
-aE(){var s="assets/images/financetracker.jpg"
-return new A.a6L(new A.aqB(A.b([new A.tN("projects.keeplinked.name","projects.keeplinked.description","assets/images/keeplinked.png","https://keeplinks.in"),new A.tN("projects.aibum.name","projects.aibum.description","assets/images/aibum.png","https://aibum.app"),new A.tN("projects.financetracker.name","projects.financetracker.description",s,""),new A.tN("projects.wanderlevel.name","projects.wanderlevel.description",s,"")],t.th)))}}
+aE(){return new A.a6L(new A.aqB(A.b([new A.tN("projects.keeplinked.name","projects.keeplinked.description","assets/images/keeplinked.png","https://keeplinks.in"),new A.tN("projects.aibum.name","projects.aibum.description","assets/images/aibum.png","https://aibum.app"),new A.tN("projects.financetracker.name","projects.financetracker.description","assets/images/financetracker.jpg",""),new A.tN("projects.wanderlevel.name","projects.wanderlevel.description","assets/images/wanderlevel.png","")],t.th)))}}
 A.a6L.prototype={
 T(a){var s,r=null,q=t.l,p=A.be(a,B.Q,q).w.a.a<=800?20:30,o=A.jm(A.dk(A.cq(a,"sections.projects",r),r,r,r,A.cT(r,r,B.l,r,r,r,r,r,r,r,r,48,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),r,r),n=A.be(a,B.Q,q).w.a.a<=800?B.aZ:B.b9
 q=A.be(a,B.Q,q).w.a.a<=800?0:20
